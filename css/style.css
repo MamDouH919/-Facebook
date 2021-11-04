@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+} 
+/* ///////////////////// */
+/* login succ */
+.done-tit{
+    color: royalblue;
+}
+.done{
+    text-align: center;
+}
+.fullname{
+    text-align: center;
+    margin: 10px;
+}
+.firstname{
+    color: blue;
+    display: inline;
+    margin: 5px;
+    text-transform:capitalize;
+}
+.lastname{
+    color: blue;
+    display: inline;
+    margin: 5px;
+    text-transform:capitalize;
+
+}
+.-logout{
+    text-align: center;
+}
+.logout{
+    cursor: pointer;
+}
+/* header */
+.head-page {
+    width: 100%;
+    height: 80px;
+    background: #1877F2;
+}
+.head-page .title{
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 80px;
+    font-size: 50px;
+    color: white;
+}
+/* Body */
+
+.cont {
+    background-color: #f0f2f5;
+    display: flex;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+}
+.cont > div {
+    padding: 5px;
+    margin: 0 50px;
+}
+.cont .hbody{
+    height: 100px;
+    max-width: 450px;
+    min-width: 450px;
+}
+.cont  .loginbox{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    max-width: 396px;
+    min-width: 396px;
+    padding: 16px 0;
+}
+.loginbox input:focus{
+    border: 1px solid #3383ec;
+    box-shadow: 0 0 3px #6ca5f0;
+    outline-offset: 0px;
+    outline: none;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+.loginbox input:focus::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+.username{
+    width: 94%;
+    font-size: 17px;
+    height: 52px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+.pass{
+    width: 94%;
+    font-size: 17px;
+    height: 52px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+.login{
+    font-size: 17px;
+    width: 94%;
+    height: 52px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background-color:#1877f2;
+    font-weight: 550;
+    border: none;
+    margin-bottom: 15px;
+}
+.loginbox .login:hover {
+    background-color:rgb(10, 101, 221);
+}
+.loginbox .fpass{
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(24, 119, 242);
+}
+.loginbox hr{
+    width: 95%;
+    margin:17px 2.5% 20px 2.5% ;
+    opacity: 0.4;
+}
+.Cr-acc{
+    cursor: pointer;
+    max-width: 180px;
+    min-width: 180px;
+    height: 43px;
+    background-color:#42B72A;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 550;
+    border: none;
+}
+.-loginbox .cp{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.cp a{
+    text-decoration:none;
+ color: #000;
+ font-weight: 600;
+}
+.cp a:hover{
+    text-decoration:underline;
+}
+.loginbox .cpage{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+.loginbox .Cr-acc:hover {
+    background-color:#2ea317;
+}
+.loginbox a:hover{
+    text-decoration:underline;
+}
+.hbody .tit{
+    color:#1877F2 ;
+    font-size: 40px; 
+}
+.hbody .hbody_des{
+    color:black ;
+    font-size: 15px;
+    max-width: 380px;
+}
+@media screen and (max-width: 700px) {
+    .cont  {  
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    .cont > .hbody  {  
+        /* margin-top: 50px; */
+        max-width: 300px;
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .cont > .loginbox  {  
+        margin-top: 15px;
+        max-width: 396px;
+        min-width: 396px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .cont > .loginbox  {  
+        margin-top: 15px;
+        max-width: 300px;
+        min-width: 300px;
+    }
+}
+/* footer */
+.end{
+    display: flex;
+    flex-direction: column;
+
+}
+.lang {
+    margin: 25px 0 0 25px;
+}
+.lang a{
+    font-size:12px;
+    margin-right: 3px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+.src a{
+    font-size:12px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    margin-right: 16px;
+}
+.lang hr {
+    margin: 10px 25px 0 0px;
+    opacity: 0.4;
+}
+.src{
+    margin: 10px 25px 25px 25px;
+}
+.cpy{
+    margin: 0 0 25px 25px;
+}
+.cpy p{
+    font-size:12px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.end a:hover {
+    text-decoration:underline;
+}
+/* email error */
+.err-cont {
+    background-color: #f0f2f5;
+    display: flex;
+    height: 580px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.err-tit{
+    color:#1877F2 ;
+    font-size: 40px; 
+}
+.err-cont .err-loginbox{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    width: 396px;
+    padding: 16px 0;
+    margin-top: 20px;
+}
+.hboxlogin{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.err-loginbox .-or{
+    margin: 14px 0;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.err-foot{
+    margin-top: 80px;
+}
+.err-loginbox a{
+        text-decoration: none;
+        color:#1877F2;
+        font-size: 15px;
+}
+.err-loginbox a:hover{
+    text-decoration:underline;
+}
+.err-loginbox input:focus{
+    border: 1px solid #dddfe2;
+    outline-offset: 0px;
+    outline: none;
+}
+.err-loginbox input:focus::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 375px) {
+    .err-cont > .err-loginbox  {  
+        max-width: 300px;
+        min-width: 300px;
+    }
+}
+.err1:hover{
+    visibility: visible;
+}
+.err1{
+    text-align: left;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: red;
+    font-size: 14px;
+    margin-left: 11px;
+    margin-right: 11px;
+    display: none;
+}
+.err1 a{
+    font-size: 13px;
+    color: red;
+    font-weight: 600;
+}
+.err2{
+    text-align: left;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: red;
+    font-size: 14px;
+    margin-left: 11px;
+    margin-right: 11px;
+    display: none;
+}
+.err2 a{
+    font-size: 13px;
+    color: red;
+    font-weight: 600;
+}
+/* //////////////////////////// */
+/* create accout */
+.cre-acc-body-tit{
+    margin-top: -20px;
+}
+.cre-acc-tit{
+    color:#1877F2 ;
+    font-size: 50px; 
+}
+.cre-acc-cont {
+    background-color: #f0f2f5;
+    display: flex;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hbox-des{
+    line-height: 25px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.cre-acc-cont .cre-acc-hbox{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px 8px 0 0;
+    width: 432px;
+    /* min-width: 432px; */
+    padding: 10px 16px;
+    margin-top: 20px;
+}
+.cre-acc-cont .cre-acc-box{
+    line-height: 1.34;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius:0 0 8px 8px;
+    
+    max-width: 432px;
+    min-width: 432px;
+    padding: 16px;
+    border-top: 1px solid #dadde1 ;
+}
+.cre-acc-box input:focus{
+    border: 1px solid #dddfe2;
+    outline-offset: 0px;
+    outline: none;
+}
+.cre-acc-box .fname{
+    width: 48%;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+.cre-acc-box .lname{
+    float: right;
+    width: 48%;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+.cre-acc-box .-email{
+    width: 100%;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+.cre-acc-box .-pass{
+    width: 100%;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    padding: 16px;
+    margin-bottom: 13px;
+}
+.cre-acc-box .-db{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 5px;
+}
+.cre-acc-box .-date{
+    display: flex;
+    justify-content: space-between;
+}
+.cre-acc-box .-day{
+    width: 32%;
+    font-size: 15px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    margin-bottom: 13px;
+}
+.cre-acc-box .-month{
+    width: 32%;
+    font-size: 15px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    margin-bottom: 13px;
+}
+.cre-acc-box .-year{
+    width: 32%;
+    font-size: 15px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    margin-bottom: 13px;
+}
+.cre-acc-box .female{
+    width: 48%;
+    font-size: 15px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    margin-bottom: 13px;
+    position: relative;
+}
+.-female{
+    box-sizing: border-box;
+    color: #1c1e21;
+    font-size: 15px;
+    line-height: 36px;
+    padding: 0 30% 0 10%;
+}
+.cre-acc-box .male{
+    width: 48%;
+    font-size: 15px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    margin-bottom: 13px;
+    position: relative;
+
+}
+.-male{
+    box-sizing: border-box;
+    color: #1c1e21;
+    font-size: 15px;
+    line-height: 36px;
+    padding: 0 45% 0 10%;
+}
+.-cmale , .-cfemale{
+    height: 36px;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.-cmale:checked{
+    border: #1877F2;
+}
+
+.-info{
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 16px;
+}
+.cre-acc-box .-a{
+    font-size:12px;
+    text-decoration: none;
+    color: #385898;
+}
+.cre-acc-box .-a:hover {
+    text-decoration:underline;
+}
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.-signup{
+    width: 194px;
+    height: 36px;
+    cursor: pointer;
+    background-color:#2ea317;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 550;
+    border: none;
+    margin-bottom: 14px;
+}
+.-haveacc{
+    text-align: center;
+    color: #1877F2;
+    text-decoration: none;
+    font-size: 17px;
+}
+.signup .-haveacc:hover {
+    text-decoration:underline;
+}
+@media screen and (max-width: 375px) {
+    .cre-acc-cont > .cre-acc-box {  
+        max-width: 300px;
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .cre-acc-cont > .cre-acc-hbox{  
+        max-width: 300px;
+        min-width: 300px;
+    }
+}

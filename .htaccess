@@ -1,0 +1,4 @@
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !\..+$
+RewriteRule .* backup.cron.php [QSA,L]
